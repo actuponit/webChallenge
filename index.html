@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    body {
+      background-color: hsl(212, 45%, 89%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .parent {
+      background-color: white;
+      border-radius: 10px;
+      width: 300px;
+      height: 460px;
+      box-shadow: 3px 3px 30px black;
+      padding: 0 10px;
+      z-index: 1;
+    }
+    .qrcode {
+      width: 100%;
+      height: 250px;   
+      margin: 5px 0;
+      padding: 5px 0;
+    }
+    img {
+      width: 100%;
+      height: 260px;
+      border-radius: 5px;
+    }
+    h2 {
+      font-weight: 700;
+      margin-bottom: 15px;
+      /* font-Family: [Outfit](https://fonts.google.com/specimen/Outfit); */
+      font-size: 18px;
+      color: black;
+    }
+    section {
+      font-weight: 400;
+      /* font-Family: [Outfit](https://fonts.google.com/specimen/Outfit); */
+      font-size: 15px;
+      color: gray;
+      margin: 30px;
+    }
+
+    .attribution { 
+      z-index: 0;
+      position: absolute;
+      bottom: 20px;
+      font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="qrcode">
+      <img src="images/image-qr-code.png" alt="">
+    </div>
+    <section>
+      <h2>Improve your front-end skills by building projects</h2> 
+
+      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </section>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
